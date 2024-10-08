@@ -1,0 +1,141 @@
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, hsl(260, 60%, 1%), #898e9d); 
+  }
+  .App-header {
+    position: relative;
+    color: hsl(0, 12%, 83%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-bottom: -10px;
+    overflow: hidden; 
+  }
+  
+  .header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1.8;
+    filter: blur(1px);
+  }
+  
+  .App-header h1, .App-header button {
+    position: relative; 
+    z-index: 1;
+  }
+  
+  .add-movie-button {
+    background-color: #1e1e1e; 
+    border: none;
+    padding: 12px 24px;
+    color: #ffffff; 
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .add-movie-button:hover {
+    background-color: #333333; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); 
+  }
+  
+  .add-movie-button:active {
+    background-color: #1a1a1a; 
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  }
+  
+  
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: #2e2e2e; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    color: #e0e0e0; 
+  }
+  
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-content input,
+  .modal-content textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #444; 
+    border-radius: 4px;
+    background: #333; 
+    color: #fff; 
+  }
+  
+  .modal-content button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff; 
+  }
+  
+  .modal-content button[type="submit"] {
+    background-color: #61dafb; 
+  }
+  
+  .modal-content button[type="button"] {
+    background-color: #f44336; 
+  }
+  
+  .modal-content button:hover {
+    opacity: 0.9; 
+  }
+  
+  .background-music {
+    display: none; 
+    
+  }
+  
+  h1 {
+    font-size: 50px; 
+    margin: 0; 
+    padding: 30px;
+    color: hwb(240 9% 90%); 
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5); 
+  }
+  .current-time {
+    font-size: 50px; 
+    margin: 0; 
+    padding: 30px;
+    margin-top: -60px;
+    color: hwb(240 9% 90%); 
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5); 
+  }
